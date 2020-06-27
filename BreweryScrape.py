@@ -24,7 +24,7 @@ def scroll_down(driver):
         last_height = new_height
 
 def render_page(url):
-	driver = webdriver.Chrome('/Users/sam.dent/Downloads/chromedriver')
+	driver = webdriver.Chrome('path to web driver here')
 	driver.get(url)
 	# time.sleep(3)
 	# Call the scroll_down function to scroll to bottom of page and load all data
@@ -34,7 +34,7 @@ def render_page(url):
 	return r
 
 def render_page_test(url):
-	driver = webdriver.Chrome('/Users/sam.dent/Downloads/chromedriver')
+	driver = webdriver.Chrome('path to web driver here')
 	driver.get(url)
 	time.sleep(5)
 	r = driver.page_source
